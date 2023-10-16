@@ -2,8 +2,9 @@
 
 function Landingpage() {
     return (
-    <div>
-        test
+    <div className="Landing_Page">
+        <div className="Page_Body">
+        </div>
     </div>
     );
 }

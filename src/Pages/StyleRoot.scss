@@ -4,3 +4,51 @@
     box-sizing: border-box;  
 }
 
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+.Landing_Page {
+    background-image: url("./assets/wallpaper.jpeg");
+    // filter: grayscale(75%);
+    height: 100vh;
+    overflow: auto;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.Page_Body {
+    margin: 25px;
+    padding: 15px;
+    border: 2.5px solid rgb(255, 237, 221);
+    border-radius: 15px;
+    height: 100vh;
+    background-color: rgba(255, 233, 213, 0.881);
+
+}
+
+.Landing_Nav {
+    border: 1px solid black;
+    border-radius: 100%;
+    width: 15vh;
+    height: 15vh;
+    background-color: pink;
+    position: fixed;
+    z-index: 2;
+    top: 95vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.Landing_Footer {
+    background-color: whitesmoke;
+    height: 5vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 1;
+    top: 95vh;
+}

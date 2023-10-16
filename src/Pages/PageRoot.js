@@ -1,13 +1,16 @@
 // Imports
 import './StyleRoot.css';
 import  Landingpage  from './Page_Bodies/LandingPage';
+import  LandingFooter  from './Page_Footers/LandingFooter';
+import LandingNav from './Page_Navs/LandingNav';
 
 function PageRoot() {
 
-    let page = Landingpage;
     return (
         <>
-
+            <Landingpage />
+            <LandingNav />
+            <LandingFooter />
         </>
     );
 }
