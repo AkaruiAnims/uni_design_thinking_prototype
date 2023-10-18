@@ -4,9 +4,10 @@ function LandingFooter() {
     return (
     <div className="Landing_Footer">
         <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Contact</li>
+            <li><button>🔎 | Home       </button></li>
+            <li><button>📓 | About      </button></li>
+            <li><button>💬 | Contact    </button></li>
+            <li><button>⚙️ | Settings   </button></li>
         </ul>
     </div>
     );
