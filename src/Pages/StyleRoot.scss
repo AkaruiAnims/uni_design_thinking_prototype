@@ -20,6 +20,10 @@ body {
     }   
 }
 
+ul {
+    list-style: none;
+}
+
 
 .Landing_Page {
     background-image: url("./assets/wallpaper.jpeg");
@@ -44,6 +48,59 @@ body {
     top: -2vh;
     background-color: rgba(255, 255, 255, 0.566);
     box-shadow: -4px -3px 45px 21px rgba(0,0,0,0.35);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .Page_Content {
+        position: relative;
+        border: 1px solid peachpuff;
+        background-color: peachpuff;
+        border-radius: 5px;
+        height: 50vh; 
+        width: 65%;
+
+        .Page_Content_Center {
+            position: absolute;
+            top: 45%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            font-family: '8BIT WONDER', sans-serif;
+            font-size: small;
+            color: #3e3e3e;
+            border: 1px solid black;
+            border-radius: 5px;
+            width: 95%;
+            height: 80%;
+            background-image: url("./assets/pokememe.jpg");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            
+        }
+
+        .Page_Content_Buttons {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            margin: 10px;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+
+            button {
+                background-color: transparent;
+                border: none;
+                color: #3e3e3e;
+                font-family: '8BIT WONDER', sans-serif;
+                font-size: small;
+                text-decoration: underline;
+                cursor: pointer;
+            }
+        }
+    }
 
 }
 
