@@ -23,6 +23,10 @@ ul {
   background-attachment: fixed;
 }
 
+.Page_Body::-webkit-scrollbar {
+  width: 0.5em;
+}
+
 .Page_Body {
   position: relative;
   margin: 0px 25px;
@@ -40,14 +44,20 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  display: grid;
+  grid-auto-flow: row;
+  grid-gap: 1rem;
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
+  overflow-y: scroll;
 }
 .Page_Body .Page_Content {
   position: relative;
   border: 1px solid peachpuff;
   background-color: peachpuff;
   border-radius: 5px;
-  height: 55%;
-  width: 65%;
+  height: 55vh;
+  width: 65vw;
 }
 .Page_Body .Page_Content .Page_Content_Center {
   position: absolute;
@@ -77,6 +87,15 @@ ul {
   justify-content: space-between;
   width: 100%;
 }
+.Page_Body .Page_Content .Page_Content_Buttons ul {
+  list-style-type: none;
+  margin: auto;
+  padding: auto;
+}
+.Page_Body .Page_Content .Page_Content_Buttons ul li {
+  display: inline;
+  margin: 0 5px;
+}
 .Page_Body .Page_Content .Page_Content_Buttons button {
   background-color: transparent;
   border: none;
@@ -101,7 +120,7 @@ ul {
 .Landing_Nav .Landing_Nav_Top {
   background-color: red;
   width: 15vh;
-  height: 70px;
+  height: 50%;
   border-top-left-radius: 510px;
   border-top-right-radius: 510px;
   border-bottom: 5px solid black;
@@ -136,6 +155,14 @@ ul {
   box-shadow: -1px -1px 45px 10px rgba(0, 0, 0, 0.35);
   font-family: "8BIT WONDER", sans-serif;
   font-size: small;
+}
+.Landing_Footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.Landing_Footer ul li {
+  display: inline;
 }
 .Landing_Footer ul li button {
   background-color: transparent;

@@ -35,6 +35,10 @@ ul {
     background-attachment: fixed;
 }
 
+.Page_Body::-webkit-scrollbar {
+    width: 0.5em;
+}
+
 .Page_Body {
     position: relative;
     margin: 0px 25px;
@@ -51,14 +55,20 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
+    display: grid;
+    grid-auto-flow: row;
+    grid-gap: 1rem;
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: scroll; 
 
     .Page_Content {
         position: relative;
         border: 1px solid peachpuff;
         background-color: peachpuff;
         border-radius: 5px;
-        height: 55%; 
-        width: 65%;
+        height: 55vh; 
+        width: 65vw;
 
         .Page_Content_Center {
             position: absolute;
@@ -90,6 +100,17 @@ ul {
             justify-content: space-between;
             width: 100%;
 
+            ul { 
+                list-style-type: none;
+                margin: auto;
+                padding: auto;
+            
+                li {
+                    display: inline;
+                    margin: 0 5px;
+                }
+            }
+
             button {
                 background-color: transparent;
                 border: none;
@@ -117,17 +138,17 @@ ul {
 
 
 
-        .Landing_Nav_Top {
+        .Landing_Nav_Top {          // pokeball top
             background-color: red;
             width: $pokeball-ui-radius;
-            height: 70px;
+            height: 50%;
             border-top-left-radius: 510px;
             border-top-right-radius: 510px;
             border-bottom: 5px solid black;
             box-shadow: -15px -15px 45px 5px rgba(0,0,0,0.35);
         } 
 
-        .Landing_Nav_Mid {
+        .Landing_Nav_Mid {          // pokeball middle
             position: absolute;
             left: 33%;
             top: 33%;
@@ -163,8 +184,13 @@ ul {
     font-size: small;
 
     ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
         li {            
             // color: #3e3e3e;
+            display: inline;
 
             button  {
                 background-color: transparent;
