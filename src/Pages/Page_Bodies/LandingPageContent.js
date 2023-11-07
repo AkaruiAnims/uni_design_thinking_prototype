@@ -14,6 +14,7 @@ function LandingPageContent() {
     const meme_array = [meme1, meme2, meme3, meme4, meme5];
 
     return (
+
         <div className="Page_Content">
             <div className="Page_Content_Top">
                 <img src={pfp} alt="Profile" className="Inner_Content" />
