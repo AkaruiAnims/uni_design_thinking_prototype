@@ -1,27 +1,18 @@
 import React, { useState } from "react";
+import LandingPageContent from "./LandingPageContent";
 
 function Landingpage( content_array ) {
-    const [like_state, setstate] = useState("💔");
-    const content = () => setstate($state => $state === "❤️" ? "💔" : "❤️");
+    const rendered = [];
+    for ( let i = 0; i < 10; i++) {
+        rendered.push(<LandingPageContent key={i} />);
+    }
 
     return (
     <div className="Landing_Page">
         <div className="Page_Body">
 
-            <div className="Page_Content">
-                <div className="Page_Content_Center">
-                </div> 
-
-                <div className="Page_Content_Buttons">
-                    <ul>
-                        <li><button onClick={content}>{`${like_state}`} | Like </button></li>
-                        <li><button>📓 | Save       </button></li>
-                        <li><button>💬 | Comment    </button></li>
-                    </ul>
-                </div>
-            </div> 
-
-
+            {rendered}
+            
         </div>
     </div>
     );
