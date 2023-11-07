@@ -81,7 +81,6 @@ ul {
   border: 1px solid rgba(199, 88, 255, 0.5);
   border-radius: 50%;
   background-color: #ffffff;
-  background-image: url("./assets/pokememe.jpg");
 }
 .Page_Body .Page_Content .Page_Content_Top:hover {
   cursor: pointer;
@@ -99,7 +98,6 @@ ul {
   border-radius: 5px;
   width: 95%;
   height: 80%;
-  background-image: url("./assets/pokememe.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -115,7 +113,6 @@ ul {
   height: 100%;
   z-index: 1;
   background-color: #ffffff;
-  background-image: url("./assets/pokememe.jpg");
 }
 .Page_Body .Page_Content .Page_Content_Buttons {
   position: absolute;
@@ -141,8 +138,10 @@ ul {
   color: #3e3e3e;
   font-family: "8BIT WONDER", sans-serif;
   font-size: small;
-  text-decoration: underline;
   cursor: pointer;
+}
+.Page_Body .Page_Content .Page_Content_Buttons button:hover {
+  text-decoration: underline;
 }
 
 .Landing_Nav {

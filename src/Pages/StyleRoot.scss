@@ -98,7 +98,6 @@ ul {
             border: 1px solid $outline-color;
             border-radius: 50%;
             background-color: $inner-color;
-            background-image: url("./assets/pokememe.jpg");
 
         }
 
@@ -121,7 +120,6 @@ ul {
             border-radius: 5px;
             width: 95%;
             height: 80%;
-            background-image: url("./assets/pokememe.jpg");
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
@@ -137,8 +135,7 @@ ul {
                 height: 100%;
                 z-index: 1;
                 background-color: $inner-color;
-                background-image: url("./assets/pokememe.jpg");
-
+                
             }
         }
 
@@ -168,8 +165,11 @@ ul {
                 color: #3e3e3e;
                 font-family: '8BIT WONDER', sans-serif;
                 font-size: small;
-                text-decoration: underline;
                 cursor: pointer;
+
+                &:hover {
+                    text-decoration: underline;
+                }
             }
         }
     }
