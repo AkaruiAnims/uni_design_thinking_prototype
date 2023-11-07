@@ -1,7 +1,6 @@
-import React, { useState } from "react";
 import LandingPageContent from "./LandingPageContent";
 
-function Landingpage( content_array ) {
+function Landingpage( ) {
     const rendered = [];
     for ( let i = 0; i < 10; i++) {
         rendered.push(<LandingPageContent key={i} />);
