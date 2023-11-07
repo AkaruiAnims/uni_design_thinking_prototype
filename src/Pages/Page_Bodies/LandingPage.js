@@ -2,8 +2,11 @@ import LandingPageContent from "./LandingPageContent";
 
 function Landingpage( ) {
     const rendered = [];
-    for ( let i = 0; i < 10; i++) {
-        rendered.push(<LandingPageContent key={i} />);
+
+    for (let x = 0; x < 2; x++) {
+        for ( let i = 0; i < 5; i++) {
+            rendered.push(<LandingPageContent name={`${i}`} key={i} />);
+        }
     }
 
     return (

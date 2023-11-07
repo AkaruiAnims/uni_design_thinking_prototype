@@ -6,12 +6,14 @@ import meme3 from "../assets/meme3.jpeg";
 import meme4 from "../assets/meme4.jpeg";
 import meme5 from "../assets/meme5.jpg";
 
-function LandingPageContent() {
+function LandingPageContent( props ) {
     const [like_state, likestate] = useState("💔");
     const [save_state, savestate] = useState("📖");
-    const like = () => likestate($state => $state === "❤️" ? "💔" : "❤️");
-    const save = () => savestate($state => $state === "📓 " ? "📖" : "📓 ");
+    const like = () => likestate($like_state => $like_state === "❤️" ? "💔" : "❤️", alert ( like_state === "❤️" ? "You disliked this meme!" : "You liked this meme!"));
+    const save = () => savestate($save_state => $save_state === "📓 " ? "📖" : "📓 ", console.log(save_state));  //alert ( save_state ===  "📓" ? "You unsaved this meme!" : "You saved this meme!"));
     const meme_array = [meme1, meme2, meme3, meme4, meme5];
+
+    console.log( save_state ===  "📖");
 
     return (
 
@@ -21,7 +23,7 @@ function LandingPageContent() {
             </div>
 
             <div className="Page_Content_Center">
-                <img src={meme_array[(Math.floor(Math.random() * 4)+1)]} alt="Profile" className="Inner_Content" />
+                <img src={meme_array[props.name]} alt="Profile" className="Inner_Content" />
             </div> 
 
             <div className="Page_Content_Buttons">
