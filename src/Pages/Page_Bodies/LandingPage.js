@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import LandingPageContent from "./LandingPageContent";
 
 function Landingpage( content_array ) {
