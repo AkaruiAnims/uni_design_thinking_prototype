@@ -201,7 +201,7 @@ ul {
 
 .Landing_Footer {
   background-color: whitesmoke;
-  height: 15vh;
+  height: 10vh;
   width: 100vw;
   position: fixed;
   z-index: 1;
@@ -227,4 +227,10 @@ ul {
   font-size: small;
   text-decoration: underline;
   cursor: pointer;
+}
+.Landing_Footer .Landing_Footer_Bottom {
+  color: rgb(186, 186, 186);
+  position: absolute;
+  bottom: 0px;
+  font-size: x-small;
 }/*# sourceMappingURL=StyleRoot.css.map */
