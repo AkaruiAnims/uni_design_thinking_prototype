@@ -15,7 +15,7 @@ function LandingNav() {
                 <ul className={state === "pokeball_close" ? "invisible" : "PokeBall_Nav"} >
                     <li className={state === "pokeball_close" ? "invisible" : "PokeBall_Nav_Button"} id="PokeBall_Nav_Button_Home" >   <button onClick={changePage("/home")}>    🏠 | Home     </button></li>
                     <li className={state === "pokeball_close" ? "invisible" : "PokeBall_Nav_Button"} id="PokeBall_Nav_Button_Profile" >  <button onClick={changePage("/profile")}>    📓 | Profile    </button></li>
-                    <li className={state === "pokeball_close" ? "invisible" : "PokeBall_Nav_Button"} id="PokeBall_Nav_Button_Contact" >  <button onClick={changePage("/contact")}>    💬 | Contact    </button></li>
+                    <li className={state === "pokeball_close" ? "invisible" : "PokeBall_Nav_Button"} id="PokeBall_Nav_Button_Contact" >  <button onClick={changePage("/contact")}>    ➕ |  Upload  </button></li>
                     <li className={state === "pokeball_close" ? "invisible" : "PokeBall_Nav_Button"} id="PokeBall_Nav_Button_Settings" > <button onClick={changePage("/settings")}>    ⚙️ | Settings   </button></li>
                 </ul>
             </div>
