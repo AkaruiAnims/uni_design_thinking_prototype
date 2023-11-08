@@ -4,11 +4,6 @@ function LandingNav() {
     const [state, setstate] = useState("pokeball_close");
     const content = () => setstate($state => $state === "pokeball_open" ? "pokeball_close" : "pokeball_open");
 
-    const switchPage = (page) => {
-        window.history.pushState( page, '/'+page);
-        console.log(page+' /'+page);
-    };
-
     return (
         <div className="Landing_Nav">
             <div className="Landing_Nav_Top">
