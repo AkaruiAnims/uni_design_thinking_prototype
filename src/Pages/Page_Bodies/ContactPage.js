@@ -1,6 +1,6 @@
 
 function ContactPage() {
-    window.history.pushState( 'Contact', '', '/contact');
+    // window.history.pushState( 'Contact', '', '/contact');
 
     return (
         <div className="Contact_Page">
