@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import pfp from "../assets/pfp.png";
 import meme1 from "../assets/meme1.jpeg";
 import meme2 from "../assets/meme2.jpeg";
-import meme3 from "../assets/meme3.jpeg";
+import meme3 from "../assets/meme3.jpg";
 import meme4 from "../assets/meme4.jpeg";
 import meme5 from "../assets/meme5.jpg";
 

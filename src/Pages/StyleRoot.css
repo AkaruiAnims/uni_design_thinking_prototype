@@ -128,6 +128,7 @@ ul {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  padding: auto;
 }
 .Page_Body .Page_Content .Page_Content_Center .Inner_Content {
   position: absolute;
