@@ -3,8 +3,8 @@
 $pokeball-ui-radius:15vh;
 $outline-color: rgba(199, 88, 255, 0.5);
 $inner-color: #ffffff;
-$background-color: rgba(170, 0, 255, 0.20);
-$shadow-color: rgba(243, 156, 255, 0.685);
+$background-color: rgba(255, 244, 254, 0.612);
+$shadow-color: rgba(248, 195, 255, 0.685);
 
 
 * {
@@ -46,14 +46,14 @@ ul {
 
 .Page_Body {
     position: relative;
-    margin: 0px 15%;
+    margin: 0px 5%;
     padding: auto;
     border: 2.5px solid $outline-color;
     border-image-slice: 1;
     border-top: 0;
     border-bottom: 0;
     height: 100vh;
-    top: -2vh;
+    // top: -2vh;
     background-color:$background-color;
     box-shadow: -4px -3px 100vw 15px $shadow-color;
     display: flex;
@@ -73,7 +73,7 @@ ul {
         border-radius: 5px;
         height: 55vh; 
         width: 65vw;
-        margin: 15% 0;
+        margin: 10% 0;
 
         .Page_Content_Top {
             position: absolute;
