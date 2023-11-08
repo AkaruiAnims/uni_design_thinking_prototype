@@ -306,7 +306,13 @@ ul {
 }
 
 
-@media (min-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */ }
+@media (min-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */ 
+    .Page_Content {
+        width: 100vw;
+        height: 100vw;
+    
+    }
+}
 @media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
     .Page_Content {
         width: 100vw;
