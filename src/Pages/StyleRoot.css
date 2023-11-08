@@ -249,6 +249,9 @@ ul {
 }
 
 @media (min-width: 320px) { /* smartphones, iPhone, portrait 480x320 phones */
+  body {
+    color: red;
+  }
   .Page_Content {
     width: 100vw;
     height: 100vw;

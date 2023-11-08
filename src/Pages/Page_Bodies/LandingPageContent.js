@@ -10,10 +10,8 @@ function LandingPageContent( props ) {
     const [like_state, likestate] = useState("💔");
     const [save_state, savestate] = useState("📖");
     const like = () => likestate($like_state => $like_state === "❤️" ? "💔" : "❤️", alert ( like_state === "❤️" ? "You disliked this meme!" : "You liked this meme!"));
-    const save = () => savestate($save_state => $save_state === "📓 " ? "📖" : "📓 ", alert ( save_state ===  "📓" ? "You unsaved this meme!" : "You saved this meme!"));
+    const save = () => savestate($save_state => $save_state === "📓 " ? "📖" : "📓 ", alert ( save_state ===  "📖" ? "You saved this meme!" : "You unsaved this meme!"));
     const meme_array = [meme1, meme2, meme3, meme4, meme5];
-
-    console.log( save_state ===  "📖");
 
     return (
 
@@ -30,7 +28,7 @@ function LandingPageContent( props ) {
             <div className="Page_Content_Buttons">
                 <ul>
                     <li><button onClick={like}>{`${like_state}`} | Like </button></li>
-                    <li><button onClick={save}>{`${save_state}`} | Save       </button></li>
+                    <li><button onClick={save}>{`${save_state}`} | Save </button></li>
                     <li><button> 💬 | Comment    </button></li>
                 </ul>
             </div>
