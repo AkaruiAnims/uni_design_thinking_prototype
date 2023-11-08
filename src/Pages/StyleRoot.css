@@ -62,8 +62,8 @@ ul {
   border: 1px solid rgb(255, 230, 0);
   background-color: #ffffff;
   border-radius: 5px;
-  height: 60vw;
-  width: 80vw;
+  height: 65vw;
+  width: 95vw;
   margin: 10% 0;
 }
 .Page_Body .Page_Content .Page_Content_Top {
@@ -171,7 +171,7 @@ ul {
   border: none;
   color: #3e3e3e;
   font-family: "8BIT WONDER", sans-serif;
-  font-size: large;
+  font-size: XX-large;
   cursor: pointer;
 }
 .Page_Body .Page_Content .Page_Content_Buttons button:hover {
