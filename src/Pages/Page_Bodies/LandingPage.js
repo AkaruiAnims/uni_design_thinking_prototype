@@ -1,4 +1,5 @@
 import LandingPageContent from "./LandingPageContent";
+import PokemonLogo from ".././assets/International_Pokémon_logo.svg.png";
 
 function Landingpage( ) {
     const rendered = [];
@@ -11,6 +12,7 @@ function Landingpage( ) {
 
     return (
     <div className="Landing_Page">
+        <img src={PokemonLogo} alt="pokemonLogo" className="Landing_Page_Logo" />
         <div className="Page_Body">
 
             {rendered}

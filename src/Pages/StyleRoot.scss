@@ -1,7 +1,8 @@
 @import url('https://fonts.cdnfonts.com/css/8bit-wonder');
 
 $pokeball-ui-radius:15vh;
-$outline-color: rgba(199, 88, 255, 0.5);
+$outline-color: rgb(255, 230, 0);// rgba(199, 88, 255, 0.5);
+$sub-outline-color: blue; // rgb(109, 109, 109);
 $inner-color: #ffffff;
 $background-color: rgba(255, 244, 254, 0.612);
 $shadow-color: rgba(248, 195, 255, 0.685);
@@ -40,6 +41,17 @@ ul {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+
+    .Landing_Page_Logo {
+        position: absolute;
+        left: 0%;
+        top: 0%;
+        z-index: 2;
+        width: auto;
+        height: 7%;
+        margin: 10px;
+        padding: auto;
+    }
 }
 
 .Page_Body::-webkit-scrollbar {
@@ -233,10 +245,30 @@ ul {
             border-radius: 100%;
             width: 5vh;
             height: 5vh;
-            // margin: auto;
             z-index: 3;
 
             @include pokeball_open_on_hover;
+        }
+
+
+        .PokeBall_Nav {        // pokeball nav buttons
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+
+            .PokeBall_Nav_Button {            
+                display: inline;
+
+                button  {
+                    background-color: transparent;
+                    border: none;
+                    color: #3e3e3e;
+                    font-family: '8BIT WONDER', sans-serif;
+                    font-size: small;
+                    text-decoration: underline;
+                    cursor: pointer;
+                }
+            }   
         }
         
         .pokeball_open {
@@ -254,30 +286,11 @@ ul {
     position: fixed;
     z-index: 1;
     top: 90vh;
-    border-top: 3px solid rgb(109, 109, 109);
+    border-top: 3px solid $sub-outline-color;
     box-shadow: -1px -1px 45px 10px rgba(0,0,0,0.35);
     font-size: small;
 
-    ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-
-        li {            
-            display: inline;
-
-            button  {
-                background-color: transparent;
-                border: none;
-                color: #3e3e3e;
-                font-family: '8BIT WONDER', sans-serif;
-                font-size: small;
-                text-decoration: underline;
-                cursor: pointer;
-            }
-        }   
-    }
-
+    
     .Landing_Footer_Bottom {
         color: $footer-color;
         position: absolute;
@@ -285,4 +298,9 @@ ul {
         font-size: small;
         padding: 5px 0px;
     }
+}
+
+
+.invisible {
+    display: none;
 }

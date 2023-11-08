@@ -1,14 +1,10 @@
 
 
 function LandingFooter() {
+
     return (
     <div className="Landing_Footer">
-        <ul className="PokeBall_Nav">
-            <li className="PokeBall_Nav_Button" id="PokeBall_Nav_Button_Adjust" ><button>🔎 | Adjust       </button></li>
-            <li className="PokeBall_Nav_Button" id="PokeBall_Nav_Button_Profile" ><button>📓 | Profile      </button></li>
-            <li className="PokeBall_Nav_Button" id="PokeBall_Nav_Button_Contact" ><button>💬 | Contact    </button></li>
-            <li className="PokeBall_Nav_Button" id="PokeBall_Nav_Button_Settings" ><button>⚙️ | Settings   </button></li>
-        </ul>
+        
 
         <div className="Landing_Footer_Bottom">
             <p>© 2021 StudioGlasses</p>
