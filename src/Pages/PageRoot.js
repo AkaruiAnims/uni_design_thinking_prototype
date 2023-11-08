@@ -23,6 +23,8 @@ pagesArray.forEach((page, index) => {
     if (currentUrl === originalUrl+page[0]) {
         rendered = [];
         rendered.push(pagesArray[index][1]);
+    }else {
+        rendered = null;
     }
 });
 
