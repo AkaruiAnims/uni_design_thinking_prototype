@@ -72,8 +72,8 @@ ul {
   top: 0;
   left: 0;
   display: flex;
-  width: 10vw;
-  height: 10vw;
+  width: 15vw;
+  height: 15vw;
   z-index: 1;
   border-radius: 50%;
 }
@@ -84,7 +84,7 @@ ul {
   display: flex;
   position: relative;
   z-index: 2;
-  margin: auto 0 auto 100%;
+  margin: auto 0 auto 110%;
   width: 100%;
   align-items: center;
   justify-content: center;
