@@ -150,7 +150,7 @@ ul {
   background-color: white;
   position: fixed;
   z-index: 2;
-  top: 95vh;
+  top: 90vh;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -183,11 +183,11 @@ ul {
 
 .Landing_Footer {
   background-color: whitesmoke;
-  height: 5vh;
+  height: 10vh;
   width: 100vw;
   position: fixed;
   z-index: 1;
-  top: 95vh;
+  top: 90vh;
   border-top: 3px solid rgb(109, 109, 109);
   box-shadow: -1px -1px 45px 10px rgba(0, 0, 0, 0.35);
   font-family: "8BIT WONDER", sans-serif;
