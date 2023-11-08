@@ -4,14 +4,19 @@ function LandingNav() {
     const [state, setstate] = useState("pokeball_close");
     const content = () => setstate($state => $state === "pokeball_open" ? "pokeball_close" : "pokeball_open");
 
+    const changePage = (e) => {
+        localStorage.removeItem("page", e);
+        console.log(localStorage.getItem("page"));
+    }
+
     return (
         <div className="Landing_Nav">
             <div className="Landing_Nav_Top">
                 <ul className={state === "pokeball_close" ? "invisible" : "PokeBall_Nav"} >
-                    <li className="PokeBall_Nav_Button" id="PokeBall_Nav_Button_Search" >   <a href="#">    🏠 | Home     </a></li>
-                    <li className="PokeBall_Nav_Button" id="PokeBall_Nav_Button_Profile" >  <a href="#">    📓 | Profile    </a></li>
-                    <li className="PokeBall_Nav_Button" id="PokeBall_Nav_Button_Contact" >  <a href="#">    💬 | Contact    </a></li>
-                    <li className="PokeBall_Nav_Button" id="PokeBall_Nav_Button_Settings" > <a href="#">    ⚙️ | Settings   </a></li>
+                    <li className={state === "pokeball_close" ? "invisible" : "PokeBall_Nav_Button"} id="PokeBall_Nav_Button_Home" >   <button onClick={changePage("/home")}>    🏠 | Home     </button></li>
+                    <li className={state === "pokeball_close" ? "invisible" : "PokeBall_Nav_Button"} id="PokeBall_Nav_Button_Profile" >  <button onClick={changePage("/profile")}>    📓 | Profile    </button></li>
+                    <li className={state === "pokeball_close" ? "invisible" : "PokeBall_Nav_Button"} id="PokeBall_Nav_Button_Contact" >  <button onClick={changePage("/contact")}>    💬 | Contact    </button></li>
+                    <li className={state === "pokeball_close" ? "invisible" : "PokeBall_Nav_Button"} id="PokeBall_Nav_Button_Settings" > <button onClick={changePage("/settings")}>    ⚙️ | Settings   </button></li>
                 </ul>
             </div>
 

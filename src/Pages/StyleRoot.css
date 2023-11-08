@@ -253,7 +253,7 @@ h1 {
   padding: auto;
   margin: 1em;
 }
-.Landing_Nav .PokeBall_Nav .PokeBall_Nav_Button a {
+.Landing_Nav .PokeBall_Nav .PokeBall_Nav_Button button {
   background-color: transparent;
   border: none;
   color: #3e3e3e;
@@ -265,23 +265,23 @@ h1 {
   margin: auto;
   padding: auto;
 }
-.Landing_Nav .PokeBall_Nav .PokeBall_Nav_Button a:link {
+.Landing_Nav .PokeBall_Nav .PokeBall_Nav_Button button:link {
   color: #3e3e3e;
   text-decoration: none;
 }
-.Landing_Nav .PokeBall_Nav .PokeBall_Nav_Button a:visited {
+.Landing_Nav .PokeBall_Nav .PokeBall_Nav_Button button:visited {
   color: #3e3e3e;
   text-decoration: none;
 }
-.Landing_Nav .PokeBall_Nav .PokeBall_Nav_Button a:active {
+.Landing_Nav .PokeBall_Nav .PokeBall_Nav_Button button:active {
   color: #3e3e3e;
   text-decoration: none;
 }
-.Landing_Nav .PokeBall_Nav .PokeBall_Nav_Button a:hover {
+.Landing_Nav .PokeBall_Nav .PokeBall_Nav_Button button:hover {
   color: #3e3e3e;
   text-decoration: underline;
 }
-.Landing_Nav .PokeBall_Nav .PokeBall_Nav_Button a:hover {
+.Landing_Nav .PokeBall_Nav .PokeBall_Nav_Button button:hover {
   text-decoration: underline;
 }
 .Landing_Nav .pokeball_open {
