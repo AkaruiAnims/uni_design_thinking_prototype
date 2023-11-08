@@ -1,7 +1,8 @@
 import LandingPageContent from "./LandingPageContent";
-import PokemonLogo from ".././assets/International_Pokémon_logo.svg.png";
 
 function Landingpage( ) {
+    window.history.pushState( 'Home', '/home');
+
     const rendered = [];
     let id_gen = 0;
 
@@ -14,7 +15,6 @@ function Landingpage( ) {
 
     return (
     <div className="Landing_Page">
-        <img src={PokemonLogo} alt="pokemonLogo" className="Landing_Page_Logo" />
         <div className="Page_Body">
 
             {rendered}
