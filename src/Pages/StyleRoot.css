@@ -56,6 +56,8 @@ ul {
   -ms-overflow-style: none; /* for Internet Explorer, Edge */
   scrollbar-width: none; /* for Firefox */
   overflow-y: scroll;
+  -webkit-backdrop-filter: blur(1px);
+          backdrop-filter: blur(1px);
 }
 .Page_Body .Page_Content {
   position: relative;
@@ -162,7 +164,8 @@ ul {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  grid-gap: 5em;
+  grid-gap: 5vw;
+  overflow: auto;
 }
 .Page_Body .Page_Content .Page_Content_Buttons ul li {
   display: inline;
@@ -172,7 +175,7 @@ ul {
   border: none;
   color: #3e3e3e;
   font-family: "8BIT WONDER", sans-serif;
-  font-size: XX-large;
+  font-size: 3vw;
   cursor: pointer;
 }
 .Page_Body .Page_Content .Page_Content_Buttons button:hover {
@@ -214,21 +217,45 @@ ul {
   cursor: pointer;
 }
 .Landing_Nav .PokeBall_Nav {
-  list-style-type: none;
-  margin: 0;
+  position: absolute;
+  display: flex;
+  width: 150%;
+  left: -25%;
+  height: auto;
+  margin: auto;
   padding: 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 244, 254, 0.612);
+  bottom: 100%;
+  border-radius: 5px;
+  -webkit-backdrop-filter: blur(1px);
+          backdrop-filter: blur(1px);
+  box-shadow: 1px 1px 5px #3e3e3e;
 }
 .Landing_Nav .PokeBall_Nav .PokeBall_Nav_Button {
   display: inline;
+  position: relative;
+  width: auto;
+  height: auto;
+  padding: auto;
+  margin: 1em;
 }
 .Landing_Nav .PokeBall_Nav .PokeBall_Nav_Button button {
   background-color: transparent;
   border: none;
   color: #3e3e3e;
   font-family: "8BIT WONDER", sans-serif;
-  font-size: small;
-  text-decoration: underline;
+  font-size: medium;
   cursor: pointer;
+  width: auto;
+  height: auto;
+  margin: auto;
+  padding: auto;
+}
+.Landing_Nav .PokeBall_Nav .PokeBall_Nav_Button button:hover {
+  text-decoration: underline;
 }
 .Landing_Nav .pokeball_open {
   background-color: yellow;
@@ -244,6 +271,7 @@ ul {
   border-top: 3px solid blue;
   box-shadow: -1px -1px 45px 10px rgba(0, 0, 0, 0.35);
   font-size: small;
+  overflow: auto;
 }
 .Landing_Footer .Landing_Footer_Bottom {
   color: rgb(186, 186, 186);
@@ -258,12 +286,10 @@ ul {
 }
 
 @media (min-width: 320px) { /* smartphones, iPhone, portrait 480x320 phones */
-  body {
-    color: red;
-  }
   .Page_Content {
     width: 100vw;
     height: 100vw;
+    font-size: auto;
   }
 }
 @media (min-width: 481px) { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */

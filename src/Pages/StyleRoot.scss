@@ -7,6 +7,7 @@ $inner-color: #ffffff;
 $background-color: rgba(255, 244, 254, 0.612);
 $shadow-color: rgba(248, 195, 255, 0.685);
 $font-color: rgb(255, 255, 255);
+$sub-font-color: #3e3e3e;
 $footer-color: rgb(186, 186, 186);
 
 
@@ -77,6 +78,7 @@ ul {
     -ms-overflow-style: none; /* for Internet Explorer, Edge */
     scrollbar-width: none; /* for Firefox */
     overflow-y: scroll; 
+    backdrop-filter: blur(1px);
 
     .Page_Content {
         position: relative;
@@ -137,9 +139,9 @@ ul {
         }
 
             &:hover {
-                    cursor: pointer;
-                    border: 1px solid $shadow-color;
-                }   
+                cursor: pointer;
+                border: 1px solid $shadow-color;
+            }   
             
             
         }
@@ -152,7 +154,7 @@ ul {
             text-align: center;
             font-family: '8BIT WONDER', sans-serif;
             font-size: small;
-            color: #3e3e3e;
+            color: $sub-font-color;
             border: 1px solid $outline-color;
             border-radius: 5px;
             width: 95%;
@@ -199,7 +201,8 @@ ul {
                 flex-direction: row;
                 justify-content: center;
                 align-items: center;
-                grid-gap: 5em;
+                grid-gap: 5vw;
+                overflow: auto;
             
                 li {
                     display: inline;
@@ -210,9 +213,9 @@ ul {
             button {
                 background-color: transparent;
                 border: none;
-                color: #3e3e3e;
+                color: $sub-font-color;
                 font-family: '8BIT WONDER', sans-serif;
-                font-size: XX-large;
+                font-size: 3vw;
                 cursor: pointer;
 
                 &:hover {
@@ -262,22 +265,47 @@ ul {
         }
 
 
-        .PokeBall_Nav {        // pokeball nav buttons
-            list-style-type: none;
-            margin: 0;
+        .PokeBall_Nav {        // pokeball nav buttons ul
+            position: absolute;
+            display: flex;
+            width: 150%;
+            left: -25%;
+            height: auto;
+            margin: auto;
             padding: 0;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: $background-color;
+            bottom: 100%;
+            border-radius: 5px;
+            backdrop-filter: blur(1px);
+            box-shadow: 1px 1px 5px $sub-font-color;
+            
 
-            .PokeBall_Nav_Button {            
+            .PokeBall_Nav_Button {      // pokeball li            
                 display: inline;
+                position: relative;
+                width: auto;
+                height: auto;
+                padding: auto;
+                margin: 1em;
 
                 button  {
                     background-color: transparent;
                     border: none;
-                    color: #3e3e3e;
+                    color: $sub-font-color;
                     font-family: '8BIT WONDER', sans-serif;
-                    font-size: small;
-                    text-decoration: underline;
+                    font-size: medium;
                     cursor: pointer;
+                    width: auto;
+                    height: auto;
+                    margin: auto;
+                    padding: auto;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
                 }
             }   
         }
@@ -300,6 +328,7 @@ ul {
     border-top: 3px solid $sub-outline-color;
     box-shadow: -1px -1px 45px 10px rgba(0,0,0,0.35);
     font-size: small;
+    overflow: auto;
 
     
     .Landing_Footer_Bottom {
@@ -318,13 +347,11 @@ ul {
 
 
 @media (min-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */ 
-    body {
-        color:red;
-    }
 
     .Page_Content {
         width: 100vw;
         height: 100vw;
+        font-size: auto;
     }
 }
 @media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
