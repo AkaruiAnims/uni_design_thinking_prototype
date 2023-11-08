@@ -9,7 +9,8 @@ import  SettingsPage from './Page_Bodies/SettingsPage';
 import  ContactPage from './Page_Bodies/ContactPage';
 
 function PageRoot() {
-const currentUrl = window.location.pathname;
+const originalUrl = window.location.origin;
+const currentUrl = window.location.href;
 const pagesArray = [
                     ["/home", <Landingpage key="home" />],
                     ["/profile", <ProfilePage key="profile" />],
@@ -18,19 +19,18 @@ const pagesArray = [
                     ];    
 let rendered = [];
 
-console.log(currentUrl);
-
 pagesArray.forEach((page, index) => {
-    if (currentUrl === page[0]) {
+    if (currentUrl === originalUrl+page[0]) {
+        rendered = [];
         rendered.push(pagesArray[index][1]);
-    }    
+    }
 });
 
     return (
         <>
 
         <img src={PokemonLogo} alt="pokemonLogo" className="Landing_Page_Logo" />
-            {rendered}
+            {rendered == null ? <Landingpage /> : rendered}
             <LandingNav />
             <LandingFooter />
         </>
