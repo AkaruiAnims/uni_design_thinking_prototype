@@ -91,8 +91,8 @@ ul {
   text-align: center;
   font-size: large;
   font-weight: bold;
-  text-shadow: 1px 1px 10px rgb(255, 230, 0);
-  color: rgb(255, 255, 255);
+  color: rgb(255, 230, 0);
+  text-shadow: 1px 1px 10px blue;
 }
 .Page_Body .Page_Content .Page_Content_Top .Inner_Content {
   position: absolute;
@@ -246,4 +246,16 @@ ul {
 
 .invisible {
   display: none;
-}/*# sourceMappingURL=StyleRoot.css.map */
+}
+
+@media (min-width: 320px) { /* smartphones, iPhone, portrait 480x320 phones */ }
+@media (min-width: 481px) { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+  .Page_Content {
+    width: 100vw;
+    height: 100vw;
+  }
+}
+@media (min-width: 641px) { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
+@media (min-width: 961px) { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width: 1025px) { /* big landscape tablets, laptops, and desktops */ }
+@media (min-width: 1281px) { /* hi-res laptops and desktops */ }/*# sourceMappingURL=StyleRoot.css.map */
