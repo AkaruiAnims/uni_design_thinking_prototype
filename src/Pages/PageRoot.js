@@ -18,6 +18,8 @@ const pagesArray = [
                     ];    
 let rendered = [];
 
+console.log(currentUrl);
+
 pagesArray.forEach((page, index) => {
     if (currentUrl === page[0]) {
         rendered.push(pagesArray[index][1]);
