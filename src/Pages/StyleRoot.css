@@ -52,7 +52,7 @@ ul {
   border: 1px solid rgba(199, 88, 255, 0.5);
   background-color: #ffffff;
   border-radius: 5px;
-  height: 55vh;
+  height: 50vw;
   width: 65vw;
   margin: 10% 0;
 }
@@ -62,8 +62,8 @@ ul {
   top: 0;
   left: 0;
   display: flex;
-  width: 7vw;
-  height: 7vw;
+  width: 10vw;
+  height: 10vw;
   z-index: 1;
   border-radius: 50%;
 }
@@ -74,11 +74,10 @@ ul {
   display: flex;
   position: relative;
   z-index: 2;
-  margin: auto;
+  margin: auto 0 auto 100%;
   width: 100%;
   align-items: center;
   justify-content: center;
-  left: 100%;
   text-align: center;
   font-size: large;
   font-weight: bold;
@@ -208,7 +207,6 @@ ul {
   top: 90vh;
   border-top: 3px solid rgb(109, 109, 109);
   box-shadow: -1px -1px 45px 10px rgba(0, 0, 0, 0.35);
-  font-family: "8BIT WONDER", sans-serif;
   font-size: small;
 }
 .Landing_Footer ul {
@@ -232,5 +230,6 @@ ul {
   color: rgb(186, 186, 186);
   position: absolute;
   bottom: 0px;
-  font-size: x-small;
+  font-size: small;
+  padding: 5px 0px;
 }/*# sourceMappingURL=StyleRoot.css.map */
