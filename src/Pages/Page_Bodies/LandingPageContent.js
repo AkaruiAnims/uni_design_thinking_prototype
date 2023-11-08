@@ -10,7 +10,7 @@ function LandingPageContent( props ) {
     const [like_state, likestate] = useState("💔");
     const [save_state, savestate] = useState("📖");
     const like = () => likestate($like_state => $like_state === "❤️" ? "💔" : "❤️", alert ( like_state === "❤️" ? "You disliked this meme!" : "You liked this meme!"));
-    const save = () => savestate($save_state => $save_state === "📓 " ? "📖" : "📓 ", console.log(save_state));  //alert ( save_state ===  "📓" ? "You unsaved this meme!" : "You saved this meme!"));
+    const save = () => savestate($save_state => $save_state === "📓 " ? "📖" : "📓 ", alert ( save_state ===  "📓" ? "You unsaved this meme!" : "You saved this meme!"));
     const meme_array = [meme1, meme2, meme3, meme4, meme5];
 
     console.log( save_state ===  "📖");
