@@ -1,7 +1,7 @@
 import LandingPageContent from "./LandingPageContent";
 
 function Landingpage( ) {
-    window.history.pushState( 'Home', '/home');
+    window.history.pushState( 'Home', '', '/home');
 
     const rendered = [];
     let id_gen = 0;

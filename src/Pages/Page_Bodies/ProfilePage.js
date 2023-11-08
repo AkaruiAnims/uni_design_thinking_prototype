@@ -1,6 +1,6 @@
 
 function ProfilePage() {
-    window.history.pushState( 'Profile', '/profile');
+    window.history.pushState( 'Profile', '', '/profile');
 
     return (
         <div className="Profile_Page">

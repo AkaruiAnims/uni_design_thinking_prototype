@@ -1,6 +1,6 @@
 
 function SettingsPage() {
-    window.history.pushState( 'Settings', '/settings');
+    window.history.pushState( 'Settings', '', '/settings');
 
     return (
         <div className="Settings_Page">
