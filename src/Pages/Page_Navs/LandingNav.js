@@ -8,10 +8,10 @@ function LandingNav() {
         <div className="Landing_Nav">
             <div className="Landing_Nav_Top">
                 <ul className={state === "pokeball_close" ? "invisible" : "PokeBall_Nav"} >
-                    <li className="PokeBall_Nav_Button" id="PokeBall_Nav_Button_Search" >   <a href="">    🏠 | Home     </a></li>
-                    <li className="PokeBall_Nav_Button" id="PokeBall_Nav_Button_Profile" >  <a href="">    📓 | Profile    </a></li>
-                    <li className="PokeBall_Nav_Button" id="PokeBall_Nav_Button_Contact" >  <a href="">    💬 | Contact    </a></li>
-                    <li className="PokeBall_Nav_Button" id="PokeBall_Nav_Button_Settings" > <a href="">    ⚙️ | Settings   </a></li>
+                    <li className="PokeBall_Nav_Button" id="PokeBall_Nav_Button_Search" >   <a href="#">    🏠 | Home     </a></li>
+                    <li className="PokeBall_Nav_Button" id="PokeBall_Nav_Button_Profile" >  <a href="#">    📓 | Profile    </a></li>
+                    <li className="PokeBall_Nav_Button" id="PokeBall_Nav_Button_Contact" >  <a href="#">    💬 | Contact    </a></li>
+                    <li className="PokeBall_Nav_Button" id="PokeBall_Nav_Button_Settings" > <a href="#">    ⚙️ | Settings   </a></li>
                 </ul>
             </div>
 
