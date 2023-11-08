@@ -16,7 +16,7 @@ ul {
 .Landing_Page {
   background-image: url("./assets/wallpaper.jpeg");
   height: 100vh;
-  overflow: hidden;
+  overflow: auto;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -29,15 +29,14 @@ ul {
 
 .Page_Body {
   position: relative;
-  margin: 0px 15%;
+  margin: 0px auto;
   padding: auto;
-  border: 2.5px solid rgba(199, 88, 255, 0.5);
+  border: 5px solid rgba(199, 88, 255, 0.5);
   border-image-slice: 1;
   border-top: 0;
   border-bottom: 0;
   height: 100vh;
   background-color: rgba(255, 244, 254, 0.612);
-  box-shadow: -4px -3px 100vw 15px rgba(248, 195, 255, 0.685);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -68,6 +67,24 @@ ul {
   z-index: 1;
   border-radius: 50%;
 }
+.Page_Body .Page_Content .Page_Content_Top p {
+  display: none;
+}
+.Page_Body .Page_Content .Page_Content_Top:active p {
+  display: flex;
+  position: relative;
+  z-index: 2;
+  margin: auto;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  left: 100%;
+  text-align: center;
+  font-size: large;
+  font-weight: bold;
+  text-shadow: 1px 1px 10px rgba(199, 88, 255, 0.5);
+  color: rgb(255, 255, 255);
+}
 .Page_Body .Page_Content .Page_Content_Top .Inner_Content {
   position: absolute;
   top: 0;
@@ -83,6 +100,7 @@ ul {
 }
 .Page_Body .Page_Content .Page_Content_Top:hover {
   cursor: pointer;
+  border: 1px solid rgba(248, 195, 255, 0.685);
 }
 .Page_Body .Page_Content .Page_Content_Center {
   position: absolute;

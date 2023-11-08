@@ -5,6 +5,8 @@ $outline-color: rgba(199, 88, 255, 0.5);
 $inner-color: #ffffff;
 $background-color: rgba(255, 244, 254, 0.612);
 $shadow-color: rgba(248, 195, 255, 0.685);
+$font-color: rgb(255, 255, 255);
+$footer-color: whitesmoke;
 
 
 * {
@@ -33,7 +35,7 @@ ul {
 .Landing_Page {
     background-image: url("./assets/wallpaper.jpeg");
     height: 100vh;
-    overflow: hidden;
+    overflow: auto;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -46,16 +48,14 @@ ul {
 
 .Page_Body {
     position: relative;
-    margin: 0px 15%;
+    margin: 0px auto;
     padding: auto;
-    border: 2.5px solid $outline-color;
+    border: 5px solid $outline-color;
     border-image-slice: 1;
     border-top: 0;
     border-bottom: 0;
     height: 100vh;
-    // top: -2vh;
     background-color:$background-color;
-    box-shadow: -4px -3px 100vw 15px $shadow-color;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -86,6 +86,29 @@ ul {
             z-index: 1;
             border-radius: 50%;
 
+            p {
+                display: none;
+            }
+
+            &:active {  
+                p {
+                    display: flex;
+                    position: relative;
+                    z-index: 2;
+                    margin: auto;
+                    width: 100%;
+                    align-items: center;
+                    justify-content: center;
+                    left: 100%;
+                    text-align: center;
+                    font-size: large;
+                    font-weight: bold;
+                    // text-decoration: underline;
+                    text-shadow: 1px 1px 10px $outline-color;
+                    color: $font-color;
+                }
+            }
+
         .Inner_Content {
             position: absolute;
             top: 0;
@@ -103,7 +126,9 @@ ul {
 
             &:hover {
                     cursor: pointer;
+                    border: 1px solid $shadow-color;
                 }   
+            
             
         }
 

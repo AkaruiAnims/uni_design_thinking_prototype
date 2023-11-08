@@ -20,6 +20,7 @@ function LandingPageContent( props ) {
         <div className="Page_Content">
             <div className="Page_Content_Top">
                 <img src={pfp} alt="Profile" className="Inner_Content" />
+                <p>Username</p>
             </div>
 
             <div className="Page_Content_Center">
